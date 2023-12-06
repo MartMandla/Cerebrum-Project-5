@@ -17,7 +17,7 @@ describe('Issue details editing', () => {
         });
         cy.wait(3000)
         cy.reload();
-        cy.contains('Issue has been successfully deleted.').should('not.exist');
+        cy.contains('Issue has been successfully deletedgit .').should('not.exist');
         cy.get('[data-testid="board-list:backlog').should('be.visible').and('have.length', '1').within(() => {
             cy.get('[data-testid="list-issue"]').should('have.length', '4');
         });
